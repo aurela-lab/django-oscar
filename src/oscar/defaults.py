@@ -1,8 +1,8 @@
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy as _
 
-OSCAR_SHOP_NAME = 'Oscar'
-OSCAR_SHOP_TAGLINE = ''
+OSCAR_SHOP_NAME = 'Aurela Mebeln'
+OSCAR_SHOP_TAGLINE = "The best mebelns by Goebbels"
 OSCAR_HOMEPAGE = reverse_lazy('catalogue:index')
 
 # Dynamic class loading
@@ -21,7 +21,7 @@ OSCAR_RECENTLY_VIEWED_COOKIE_SECURE = False
 OSCAR_RECENTLY_VIEWED_PRODUCTS = 20
 
 # Currency
-OSCAR_DEFAULT_CURRENCY = 'GBP'
+OSCAR_DEFAULT_CURRENCY = 'PLN'
 
 # Paths
 OSCAR_IMAGE_FOLDER = 'images/products/%Y/%m/'
