@@ -2,7 +2,7 @@ from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy as _
 
 OSCAR_SHOP_NAME = 'Aurela Mebeln'
-OSCAR_SHOP_TAGLINE = "The best mebelns by Goebbels"
+OSCAR_SHOP_TAGLINE = "Aurela Alta Furniture"
 OSCAR_HOMEPAGE = reverse_lazy('catalogue:index')
 
 # Dynamic class loading
