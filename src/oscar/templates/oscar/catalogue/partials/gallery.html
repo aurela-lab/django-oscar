@@ -16,6 +16,11 @@
                         <img src="{{ thumb.url }}" alt="{{ product.get_title }}" />
                     </div>
                 {% endfor %}
+                {% if product.sketchfab_embed_code %}
+                    <div class="carousel-item">
+                        {{ product.sketchfab_embed_code|safe}}
+                    </div>
+                {% endif %}
                 </div>
                 <a class="carousel-control-prev" href="#product_gallery" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -34,6 +39,11 @@
                         <img src="{{ thumb.url }}" alt="{{ product.get_title }}" />
                     </li>
                 {% endfor %}
+                {% if product.sketchfab_embed_code %}
+                    <li data-target="#product_gallery" data-slide-to="{{ all_images|length }}">
+                        <img src="/static/oscar/img/3d-rotation-icon-13.jpg" width="65" height="55" alt="360° View" />
+                    </li>
+                {% endif %}
             </ol>
         </div>
 

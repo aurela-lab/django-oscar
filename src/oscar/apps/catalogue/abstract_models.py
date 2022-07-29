@@ -377,6 +377,7 @@ class AbstractProduct(models.Model):
                              max_length=255, blank=True)
     slug = SlugField(_('Slug'), max_length=255, unique=False)
     description = models.TextField(_('Description'), blank=True)
+    sketchfab_embed_code = models.TextField(_('SketchfabEmbedCode'), blank=True, null=True)
     meta_title = models.CharField(_('Meta title'), max_length=255, blank=True, null=True)
     meta_description = models.TextField(_('Meta description'), blank=True, null=True)
 
